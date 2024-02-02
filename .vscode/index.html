@@ -3,38 +3,56 @@
 <head>
     <meta charset="UTF-8" />
     <title>HTML Forms</title>
+    
 </head>
 <body>
-    <table>
+    <table border="1">
         <thead>
             <tr>
-                <th>Payment Form Example</th>
-            </tr>
-            <tr>
-                <td>Some fields are missing</td>
-            </tr>
-            <tr>
-                <td>Card Number</td>
-                <td>CVC</td>
-                <td>Amount</td>
-            </tr>
-            <tr>
-                <td>First Name</td>
-                <td>Last Name</td>
-            </tr>
-            <tr>
-                <td>City/td>
-                <td>State</td>
-                <td>Postal Code</td>
-            </tr>
-            <tr>
-                <td>We accept:</td>
-                <td>Message:</td>
-            </tr>
-            <tr>
-                <td>buttons</td>
+                <th colspan="100%">Payment Form Example</th>
             </tr>
         </thead>
+        <tbody>
+            <tr>
+              <td colspan="100%">Some fields are missing</td>
+          </tr>
+            <tr>
+                <td>Card #<input type="text" name="CC" value=""/>
+                </td>
+                <td>CVC<input type="text" name="threedigits" value=""/>
+                </td>
+                <td>Amount<input type="text" name="amount" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>First Name<input type="text" name="first" value=""/>
+                </td>
+                <td>Last Name<input type="text" name="surname" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>City<input type="text" name="City" value=""/>
+                </td>
+                <td>State<select name="State"/><option value="Florida">Florida</option><option value="Kentucky">Kentucky</option><option value="Hawaii">Hawaii</option>
+                </td>
+                <td>Postal Code<input type="text" name="zip" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>We accept:<input type="text"name="accept" value=""/>
+                </td>
+                <td>Message:<input type="text" name="comments" value=""/>
+                </td>
+               
+            </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+                <td colspan="100%"><input type="button" name="click" value="Cancel"/>
+                <input type="button" name="click" value="Send"/>
+                </td>
+          </tr>
+      </tfoot>
     </table>
     
 </body>
