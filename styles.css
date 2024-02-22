@@ -1,50 +1,50 @@
 
 th {
-    background-color: rgba(169, 169, 169, 0.2);
-    padding:7px;
-    font-size:20px;
-  }
-  
-  
-  tfoot {
-    text-align: end; 
-    padding:7px;
-    margin:auto;
-    background-color: rgba(169, 169, 169, 0.2);
-  }
-  
-  tfoot button {
-    margin: 7px; 
-    height: 40px;
-    border: 5px;
-  }
-  
-  select {
-    width: 200px; 
-    padding: 8px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; /
-    box-sizing: border-box;
-    font-size: 16px; 
-    background-color: #fff; 
-  }
-  .missing {
-    background-color: rgba(220, 110, 121, 0.3);
-    color:darkred;
-  }
-  
-  table {
-    border-style: double;
-    border-color: grey;
-    border-radius:25px;
-    margin: auto;
-    margin-top: 35px;
-  }
-  tbody {
-    color: (237, 231, 225);, 1;
-  }
-  
-  textarea comments{
-      font-size: 4px;
-  }
-  
+  background-color: rgba(169, 169, 169, 0.2);
+  padding:7px;
+  font-size:20px;
+}
+
+
+tfoot {
+  text-align: end; 
+  padding:7px;
+  margin:auto;
+  background-color: rgba(169, 169, 169, 0.2);
+}
+
+tfoot button {
+  margin: 7px; 
+  height: 40px;
+  border: 5px;
+}
+
+select {
+  width: 200px; 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; /
+  box-sizing: border-box;
+  font-size: 16px; 
+  background-color: #fff; 
+}
+.missing {
+  background-color: rgba(220, 110, 121, 0.3);
+  color:darkred;
+}
+
+table {
+  border-style: double;
+  border-color: grey;
+  border-radius:25px;
+  margin: auto;
+  margin-top: 35px;
+}
+tbody {
+  color: (237, 231, 225);, 1;
+}
+
+textarea comments{
+    font-size: 4px;
+}
+

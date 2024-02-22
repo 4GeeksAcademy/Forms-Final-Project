@@ -1,24 +1,22 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" />
     <title>HTML Forms</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <table border="1">
+  <table class="fullTable"border="1">
         <thead>
             <tr>
                 <th colspan="100%">Payment Form Example</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="missing">
               <td colspan="100%">Some fields are missing</td>
-          </tr>
+            </tr>
             <tr>
                 <td>Card #<input type="text" name="CC" value=""/>
                 </td>
@@ -27,7 +25,7 @@
                 <td>Amount<input type="text" name="amount" value=""/>
                 </td>
             </tr>
-            <tr>
+            <tr class="space">
                 <td>First Name<input type="text" name="first" value=""/>
                 </td>
                 <td>Last Name<input type="text" name="surname" value=""/>
@@ -36,27 +34,33 @@
             <tr>
                 <td>City<input type="text" name="City" value=""/>
                 </td>
-                <td>State<select name="State"/><option value="Florida">Florida</option><option value="Kentucky">Kentucky</option><option value="Hawaii">Hawaii</option>
+                <td>State<select name="State" value=""/><option value="pick">Pick a state</option><option value="Florida">Florida</option><option value="Kentucky">Kentucky</option><option value="Hawaii">Hawaii</option>
+                <label>Pick a state</label>
+   
+                
                 </td>
                 <td>Postal Code<input type="text" name="zip" value=""/>
                 </td>
             </tr>
             <tr>
-                <td>We accept:<input type="text"name="accept" value=""/>
+                <td>We accept:<br><input type="radio"name="CC" value="visa"><i class="fa-brands fa-cc-visa"></i><input type="radio" name="CC"value="MC"><i class="fa-brands fa-cc-mastercard"></i><input type="radio" name="CC"value="Diners"><i class="fa-brands fa-cc-diners-club"></i><input type="radio" name="CC"value="ApplePay"><i class="fa-brands fa-cc-apple-pay"></i>
                 </td>
-                <td>Message:<input type="text" name="comments" value=""/>
-                </td>
-               
+                <td>Message<textarea name="comments" value=""></textarea><br><font size="-2">Add any notes here</font></td>
+                                 
             </tr>
+            
         </tbody>
         <tfoot>
           <tr>
-                <td colspan="100%"><input type="button" name="click" value="Cancel"/>
-                <input type="button" name="click" value="Send"/>
+                <td colspan="100%">        
+                  <button type="button" class="btn btn-secondary">Cancel</button>
+                  <button type="button" class="btn btn-primary">Send</button>
+
+     
                 </td>
           </tr>
       </tfoot>
-    </table>
-    
+  </table>
+    <script src="https://kit.fontawesome.com/89c2d02079.js" crossorigin="anonymous"></script>
 </body>
 </html>
